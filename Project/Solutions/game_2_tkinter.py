@@ -1,3 +1,6 @@
+"""
+A GUI word guessing game built in Tkinter
+"""
 import tkinter as tk
 from functools import partial
 

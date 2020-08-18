@@ -1,3 +1,6 @@
+"""
+A GUI word guessing game built in PySimpleGui
+"""
 import PySimpleGUI as sg
 
 from word_game.game import WordGame

@@ -64,8 +64,6 @@ class WordGame(object):
         else:
             self.wrong_guesses_left -= 1
             correct = False
-        # if self.game_over():
-        #     update_win(self.word, self.game_won())
         return correct
 
 
