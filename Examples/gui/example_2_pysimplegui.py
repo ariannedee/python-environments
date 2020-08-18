@@ -17,13 +17,8 @@ while True:
     if event == sg.WIN_CLOSED or event == 'Exit':
         break
     if event == 'Show':
-        # Update the "output" text element to be the value of "input" element
+        # Select the "output" text element and set the text to the value of "input" element
         window['-OUTPUT-'].update(values['-IN-'])
-
-        # In older code you'll find it written using FindElement or Element
-        # window.FindElement('-OUTPUT-').Update(values['-IN-'])
-        # A shortened version of this update can be written without the ".Update"
-        # window['-OUTPUT-'](values['-IN-'])
 
 # 4 - the close
 window.close()
