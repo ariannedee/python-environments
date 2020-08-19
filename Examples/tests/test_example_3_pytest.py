@@ -1,10 +1,7 @@
 """
-import pytest
 In terminal, run $ pytest
 """
-import pytest
-
-from .rock_paper_scissors_fixed import determine_winner, game_over, YOU, COMP
+from .rock_paper_scissors_buggy import determine_winner, game_over, YOU, COMP
 
 
 def test_determine_winner():
