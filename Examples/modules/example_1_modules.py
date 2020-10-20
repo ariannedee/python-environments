@@ -1,4 +1,4 @@
-from .package import package_func
+from package import package_func
 from package.package_module import package_module_func as pmc
 from package.subpackage import sub_module_func
 
