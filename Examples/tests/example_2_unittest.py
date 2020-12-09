@@ -3,7 +3,7 @@ import unittest
 from rock_paper_scissors_buggy import determine_winner, game_over, YOU, COMP
 
 
-class TestWordGame(unittest.TestCase):
+class TestRPSGame(unittest.TestCase):
     def test_determine_winner(self):
         self.assertEqual(determine_winner('r', 'r'), None)
         self.assertEqual(determine_winner('r', 'p'), COMP)
