@@ -11,7 +11,6 @@ from random import *
 pi = math.pi
 
 print(f'Built-ins\n{dir(__builtins__)}\n')
-print(f'Globals\n{globals()}\n')
 
 
 def outer_function(a):
@@ -22,5 +21,7 @@ def outer_function(a):
     inner_function("B")
     print(f'Outer function locals\n{locals()}\n')
 
+
+print(f'Globals\n{globals()}\n')
 
 outer_function("A")
