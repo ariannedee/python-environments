@@ -2,6 +2,8 @@
 
 This is the code for the *O'Reilly Live Training* - **Python Environments and Best Practises** presented by Arianne Dee
 
+TEST
+
 **Note**: If you're looking for the project code for a specific date in the past,
 look for the specific class [here](https://github.com/ariannedee/python-environments/releases)
 
