@@ -1,6 +1,6 @@
 # Python Environments and Best Practises Live Training
 
-This is the code for the *Safari Live Training* - **Python Environments and Best Practises** presented by Arianne Dee
+This is the code for the *O'Reilly Live Training* - **Python Environments and Best Practises** presented by Arianne Dee
 
 **Note**: If you're looking for the project code for a specific date in the past,
 look for the specific class [here](https://github.com/ariannedee/python-environments/releases)
