@@ -21,7 +21,7 @@ from .rock_paper_scissors_buggy import determine_winner, game_over, YOU, COMP
 def test_determine_winner(you, comp, expected_winner):
     assert determine_winner(you, comp) == expected_winner
 
-
+print("hello")
 @pytest.mark.parametrize("best_of, score, expected_winner", [
     (3, [0, 0], None),
     (3, [1, 1], None),
