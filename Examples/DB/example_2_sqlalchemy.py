@@ -46,7 +46,7 @@ def fetch_words(connection, difficult=None):
     if difficult is not None:
         q = q.where(words.c.difficult == difficult)
     result = connection.execute(q).fetchall()
-    return [row['word'] for row in result]
+    return [row.word for row in result]
 
 
 def get_random_word(connection, difficult=False):
