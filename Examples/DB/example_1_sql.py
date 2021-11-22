@@ -20,47 +20,70 @@ def sql_connection():
         print(Error)
 
 
-def sql_table(connection):
+def create_table(connection):
     cursor = connection.cursor()
-    cursor.execute("CREATE TABLE words(word TEXT, hard INTEGER)")
+    # Check if table already exists
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='words'")
+    rows = cursor.fetchall()
+
+    # If not, create table
+    if len(rows) == 0:
+        cursor.execute("CREATE TABLE words(word TEXT, difficult INTEGER)")
     connection.commit()
 
 
-def sql_insert(connection, word_data):
-    connection.cursor().execute("INSERT INTO words (word, hard) VALUES(?, ?)", word_data)
+def insert_word(connection, word, difficult):
+    connection.cursor().execute("INSERT INTO words (word, difficult) VALUES(?, ?)", (word, difficult))
     connection.commit()
 
 
-def sql_fetch_words(connection, hard):
+def fetch_words(connection, difficult=None):
     cursor = connection.cursor()
-    values = (1,) if hard else (0,)
-    cursor.execute('SELECT word FROM words WHERE hard=?', values)
+    if difficult is None:
+        cursor.execute('SELECT word FROM words')
+    else:
+        values = (1,) if difficult else (0,)
+        cursor.execute('SELECT word FROM words WHERE difficult=?', values)
     rows = cursor.fetchall()
     return [row[0] for row in rows]
 
 
-def random_word_db(hard):
-    con = sql_connection()
-    possible_words = sql_fetch_words(con, hard)
-    con.close()
+def get_random_word(connection, difficult):
+    possible_words = fetch_words(connection, difficult)
     word = random.choice(possible_words)
     return word
 
 
-if __name__ == '__main__':
-    con = sql_connection()
-    sql_table(con)
-
+def load_words(connection):
     path = get_path('words.txt')
     with open(path, 'r') as file:
         for line in file.readlines():
-            data = (line.strip(), 0)
-            sql_insert(con, data)
+            word = line.strip().lower()
+            insert_word(connection, word, difficult=0)
 
     path = get_path('hard_words.txt')
     with open(path, 'r') as file:
         for line in file.readlines():
-            data = (line.strip(), 1)
-            sql_insert(con, data)
-    con.commit()
+            word = line.strip().lower()
+            insert_word(connection, word, difficult=1)
+    connection.commit()
+
+
+if __name__ == '__main__':
+    con = sql_connection()
+    create_table(con)
+
+    word_list = fetch_words(con)
+
+    # Load words if empty
+    if len(word_list) == 0:
+        load_words(con)
+
+    word_list = fetch_words(con)
+    assert len(word_list) > 200
+    print(f"There are {len(word_list)} words in the database")
+    easy_word = get_random_word(con, difficult=0)
+    print(f"Easy word: {easy_word}")
+    difficult_word = get_random_word(con, difficult=1)
+    print(f"Difficult word: {difficult_word}")
     con.close()
