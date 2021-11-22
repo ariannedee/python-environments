@@ -45,3 +45,5 @@ def test_game_over():
 
 test_determine_winner()
 test_game_over()
+
+print("Tests passed")
