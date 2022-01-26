@@ -3,6 +3,7 @@ Word guessing game. When player guesses 6 wrong letters, they lose.
 """
 from .data import get_random_word
 
+print("hello")
 
 class WordGame(object):
     def __init__(self, hard_word=False, num_wrong_guesses=6):
