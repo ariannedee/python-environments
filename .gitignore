@@ -2,3 +2,4 @@ venv/
 .idea
 *.py[cod]
 .vscode
+.ipynb_checkpoints
