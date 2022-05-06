@@ -4,7 +4,7 @@ Install using $ pip install click
 """
 import click
 
-from main import greet
+from module import greet
 
 
 @click.command()

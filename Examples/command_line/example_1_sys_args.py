@@ -8,7 +8,7 @@ Python files can accept arguments from the command line.
 
 import sys
 
-from main import greet
+from module import greet
 
 args = sys.argv
 

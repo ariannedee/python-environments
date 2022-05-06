@@ -3,7 +3,7 @@ Arguments using the built-in argparse module
 """
 import argparse
 
-from main import greet
+from module import greet
 
 parser = argparse.ArgumentParser(description='An example program')
 parser.add_argument('--shout', action="store_true")
