@@ -1,3 +1,4 @@
+#! /Library/Frameworks/Python.framework/Versions/3.10/bin/python3
 """
 Creating command line applications using the click library
 Install using $ pip install click
