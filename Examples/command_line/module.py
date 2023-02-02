@@ -14,4 +14,4 @@ def greet(name, count=1, shout=False):
 
 if __name__ == "__main__":
     greet("Arianne", 5)
-    greet("Marianne", 2, shout=True)
+    greet("Young-Woo", 2, shout=True)
