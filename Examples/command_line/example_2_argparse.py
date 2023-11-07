@@ -11,7 +11,7 @@ parser.add_argument('number', type=int, nargs='?', default=1)
 
 args = parser.parse_args()
 
-print(f'boolean {args.shout}')
+print(f'shout {args.shout}')
 print(f'number {args.number}')
 
 # ------------------------------------------ #
