@@ -6,14 +6,13 @@ This is the code for the *O'Reilly Live Training* - **Python Environments and Be
 look for the specific class [here](https://github.com/ariannedee/python-environments/releases)
 
 Before the class, please follow these instructions:
-1. [Install Python](#1-install-python-36-or-higher)
+1. [Install Python](#1-install-python-38-or-higher)
 1. [Check that Python was installed properly](#2-make-sure-that-python-is-properly-installed)
 1. [Install PyCharm](#3-download-pycharm-community-edition)
 1. [Download the code](#4-download-the-course-files)
-5. [Download the resources](#5-at-the-beginning-of-class-download-the-resources)
 
 ## Set up instructions
-### 1. Install Python 3.6 or higher
+### 1. Install Python 3.8 or higher
 Go to https://www.python.org/downloads/
 
 Click the yellow button at the top to download the latest version of Python.
@@ -41,7 +40,7 @@ or *Terminal* on Mac or Linux
 1. Type `python3 --version` and press enter
 
 1. One or both of those commands should print 
-a Python version of 3.6 or higher 
+a Python version of 3.8 or higher 
 (whichever version you just downloaded).
  If it doesn't, you have to follow instructions to
  [add Python to your PATH variable](docs/WINSETPATH.md).
@@ -68,25 +67,18 @@ Clone the repository.
 #### If you don't know git:
 1. Click the "Clone or download" (green) button at the top-right of the page
 2. Click "Download ZIP"
-3. Unzip it and move the **python-environments-master** folder to a convenient location
-
-### 5. At the beginning of class, download the resources
-When you have signed in to the class,
-the **Resources** widget will have PDFs for the slides and
-for a resource package that has PyCharm shortcuts, links, and a Python 2 to 3 comparison
+3. Unzip it and move the **python-environments-main** folder to a convenient location
 
 ## FAQs
 ### Can I use Python 2?
 
-Yes. There are not many differences for this class.
+No. Please use Python 3.8 or higher.
 
 ### Can I use a different code editor besides PyCharm?
 
-Jupyter notebooks are not ideal since we'll be working from multiple folders throughout the class.
+You can use VS Code for this class.
 
-Other IDEs like VS Code, Atom, and Spyder will work, but they are only recommended if you are already know it 
-and are comfortable navigating to different files and running commands in the command line. 
-If it has syntax highlighting for Python, that is ideal.
+Jupyter notebooks are not ideal since we'll be working from multiple folders throughout the class.
 
 ### PyCharm can't find Python 3
 
