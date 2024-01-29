@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 
-sg.theme('Dark Amber')
+sg.theme('Light Green')
 
 # 1- the layout
 layout = [[sg.Text('Your typed chars appear here:'), sg.Text(size=(15, 1), key='-OUTPUT-')],
