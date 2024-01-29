@@ -42,7 +42,7 @@ while True:
     game.guess_letter(event)
     window['-DISPLAY-'].update(game.display_word)
     new_status = ''
-    window[event].Update(disabled=True)
+    window[event].update(disabled=True)
     if game.game_won():
         new_status = 'You won!'
     elif game.game_lost():
