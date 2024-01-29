@@ -1,5 +1,5 @@
-import os
 import random
+from pathlib import Path
 
 from sqlalchemy import (
     Boolean,
@@ -12,8 +12,8 @@ from sqlalchemy import (
 
 
 def get_path(filename):
-    this_directory = os.path.dirname(__file__)
-    full_path = os.path.join(this_directory, filename)
+    folder = Path(__file__).parent
+    full_path = folder / filename
     return full_path
 
 
@@ -46,7 +46,7 @@ def fetch_words(connection, difficult=None):
     if difficult is not None:
         q = q.where(words.c.difficult == difficult)
     result = connection.execute(q).fetchall()
-    return [row['word'] for row in result]
+    return [row[0] for row in result]
 
 
 def get_random_word(difficult=False):
