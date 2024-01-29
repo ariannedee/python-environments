@@ -1,20 +1,12 @@
-import os
 import random
 import sqlite3
 
 from sqlite3 import Error
 
 
-def get_path(filename):
-    this_directory = os.path.dirname(__file__)
-    full_path = os.path.join(this_directory, filename)
-    return full_path
-
-
 def sql_connection():
     try:
-        path = get_path('test_sql.db')
-        con = sqlite3.connect(path)
+        con = sqlite3.connect('test_sql.db')
         return con
     except Error:
         print(Error)
