@@ -11,6 +11,7 @@ def greet(name, count=1, shout=False):
     for i in range(count):
         print(greeting)
 
+print('hi')
 
 if __name__ == "__main__":
     greet("Arianne", 5)
