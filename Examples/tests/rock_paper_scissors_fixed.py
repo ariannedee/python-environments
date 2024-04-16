@@ -2,7 +2,6 @@ import random
 
 YOU = 0
 COMP = 1
-NOBODY = -1
 
 CHOICES = ['r', 'p', 's']
 CHOICE_MAP = {'r': 'Rock', 'p': 'Paper', 's': 'Scissors'}
