@@ -1,4 +1,4 @@
-click              # https://click.palletsprojects.com/
-PySimpleGUI==4.45  # https://pysimplegui.readthedocs.io/
-pytest>=6          # https://docs.pytest.org/
-SQLAlchemy>=1,<2   # https://www.sqlalchemy.org/
+click                # https://click.palletsprojects.com/
+PySimpleGUI==4.60.5  # https://pysimplegui.readthedocs.io/
+pytest>=6            # https://docs.pytest.org/
+SQLAlchemy>=1,<2     # https://www.sqlalchemy.org/
