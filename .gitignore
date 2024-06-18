@@ -14,4 +14,5 @@ __pycache__/
 # Notebook history
 .ipynb_checkpoints
 
+# Mac folder stuff
 .DS_Store
