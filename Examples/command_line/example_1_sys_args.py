@@ -11,7 +11,7 @@ import sys
 from module import greet
 
 args = sys.argv
-
+print('hi')
 print(f'Received {len(args)} arguments:')
 for arg in args:
     print('  ' + arg)
