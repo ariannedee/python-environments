@@ -15,6 +15,4 @@ from module import greet
 def hello(num, name, shout):
     greet(name, num, shout)
 
-print('hi')
-
 hello()
