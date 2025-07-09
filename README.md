@@ -52,14 +52,12 @@ to run the Python interpreter.
 You can also run a *.py* file by running 
 `python filename.py`
 
-### 3. Download PyCharm (Community Edition)
+### 3. Download PyCharm
 Download here: https://www.jetbrains.com/pycharm/download/
 
 Install, open, and use the default settings.
 
 ### 4. Download the course files
-If you're viewing this on GitHub already, stay on this page.
-Otherwise, go to the GitHub repository: https://github.com/ariannedee/python-environments
 
 #### If you know git:
 Clone the repository.
@@ -70,9 +68,6 @@ Clone the repository.
 3. Unzip it and move the **python-environments-main** folder to a convenient location
 
 ## FAQs
-### Can I use Python 2?
-
-No. Please use Python 3.8 or higher.
 
 ### Can I use a different code editor besides PyCharm?
 
@@ -98,5 +93,4 @@ Once in Settings:
    - You may have to search the internet for where Python gets installed by default on your operating system
 
 ### Do you offer private Python help?
-Yes, email **arianne.dee.studios at gmail.com** if you have any questions
-or would like to set up some remote training.
+Yes, email **arianne.dee.studios at gmail.com** if you have any questions.
