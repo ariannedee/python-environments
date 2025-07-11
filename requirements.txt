@@ -1,4 +1,5 @@
-click                   # https://click.palletsprojects.com/
-PySimpleGUI==5.0.99.99  # https://pysimplegui.readthedocs.io/
-pytest>=6               # https://docs.pytest.org/
-SQLAlchemy>=1,<2        # https://www.sqlalchemy.org/
+click              # https://click.palletsprojects.com/
+pytest>=6          # https://docs.pytest.org/
+SQLAlchemy>=1,<2   # https://www.sqlalchemy.org/
+PySimpleGUI        # https://pysimplegui.readthedocs.io/
+--extra-index-url https://PySimpleGUI.net/install  # PySimpleGUI is now on a different server
